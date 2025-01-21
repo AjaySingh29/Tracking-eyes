@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.eyes {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 200px;
+}
+
+.eye {
+    width: 100px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: snow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.pupil {
+    width: 35%;
+    aspect-ratio: 1 / 1;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    border-radius: 50%;
+    transition: transform 0.2s ease-out;
+}
